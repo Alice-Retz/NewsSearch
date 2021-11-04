@@ -4,9 +4,9 @@ import React from 'react';
 export default function Article({ title, author, description }) {
   return (
     <>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p>{author}</p>
-      <h2>{description}</h2>
+      <h3>{description}</h3>
     </>
   );
 }

@@ -8,7 +8,7 @@ export default function ArticleList({ articles }) {
       <Article title={title} author={author} description={description} />
     </li>
   ));
-  return articleList;
+  return <ul aria-label="articles">{articleList}</ul>;
 }
 
 ArticleList.propTypes = {

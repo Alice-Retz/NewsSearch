@@ -20,11 +20,11 @@ export default class NewsContainer extends Component {
     if (loading) return <h1>Loading...</h1>;
     return (
       <>
-        <Search
+        {/* <Search
           searchParam={searchParam}
           onSearchChange={this.onSearchChange}
           onSubmit={this.onSubmit}
-        />
+        /> */}
         <ArticleList articles={articles} />
       </>
     );
