@@ -4,7 +4,7 @@ import React from 'react';
 export default function Search({ searchParam, onSearchChange, onSubmit }) {
   return (
     <form onSubmit={onSubmit}>
-      <label htmlFor="searchParam">New Search</label>
+      <label htmlFor="searchParam">New Search: </label>
       <input
         id="searchParam"
         name="searchParam"
@@ -19,6 +19,6 @@ export default function Search({ searchParam, onSearchChange, onSubmit }) {
 
 Search.propTypes = {
   searchParam: PropTypes.string.isRequired,
-  onSearchChange: PropTypes.string.isRequired,
-  onSubmit: PropTypes.string.isRequired,
+  onSearchChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
